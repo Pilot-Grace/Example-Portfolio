@@ -1,0 +1,112 @@
+<style>
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #34495e;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+section {
+    padding: 20px;
+    margin-top: 5px;
+}
+
+#profile img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.image-container {
+    text-align: center; /* Center-align the image and text */
+    width: fit-content; /* Fit the width of the container to the content */
+    margin: auto; /* Center the container horizontally on the page */
+}
+
+.image-container img {
+    display: block; /* Ensures the image does not sit inline with other elements */
+    margin: 0 auto; /* Centers the image within the container */
+    max-width: 100%; /* Ensures the image is responsive and fits the container */
+}
+
+.image-caption {
+    margin-top: 10px; /* Adds a little space between the image and the caption */
+    color: #333; /* Optional: sets the text color */
+    font-size: 16px; /* Optional: sets the size of the caption text */
+}
+/* Additional styles for project images to ensure uniformity */
+.projects-container {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing between items */
+    flex-wrap: wrap; /* Allows containers to wrap onto the next line as needed */
+  }
+  
+  .project-image-container {
+    flex: 1 1 30%; /* Each takes up to 30% of the flex container width */
+    height: 250px; /* Fixed height for each image container */
+    margin: 10px; /* Provides some space around each container */
+    overflow: hidden; /* Prevents images from overflowing their containers */
+    position: relative; /* Allows precise positioning of elements inside */
+  }
+  
+  .project-image-container img {
+    width: 100%; /* Ensures image covers the full width of its container */
+    height: 100%; /* Ensures image covers the full height of its container */
+    object-fit: cover; /* Ensures the image covers the area, cropping excess */
+  }
+  
+  a:hover, button:hover {
+    color: #d6c911; /* Change color on hover */
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling when clicking anchor links */
+}
+
+.project-image-container {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image-container:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+}
+
+
+</style>
